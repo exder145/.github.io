@@ -1,0 +1,62 @@
+/* 加载动画容器 */
+#loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-card);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+#loading-container.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* 加载动画 */
+.loader {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 55px;
+  width: 200px;
+}
+
+.container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+/* 添加具体的动画元素样式 */
+.love, .death, .robots {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--color-text);
+  border-radius: 50%;
+  animation: bounce 1s infinite;
+}
+
+/* 为每个元素设置不同的动画延迟 */
+.love { animation-delay: 0.1s; }
+.death { animation-delay: 0.2s; }
+.robots { animation-delay: 0.3s; }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+} 
