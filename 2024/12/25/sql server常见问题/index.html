@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-12-24T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-12-30T12:38:56.214Z">
+<meta property="article:modified_time" content="2025-01-22T09:22:30.012Z">
 <meta property="article:author" content="EXDER">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
@@ -1908,7 +1908,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1737537444244),
+    lastupdate: new Date(1737537767308),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2336,7 +2336,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2625,7 +2625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper post dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://exder-1333988393.cos.ap-beijing.myqcloud.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-10-25%20223349.jpg"></div>
 
@@ -2861,10 +2861,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-30T20:38:56+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-01-22T17:22:30+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年12月30日</p>
+    <p>更新于：2025年1月22日</p>
   </a>
 </div>
 
@@ -3083,14 +3083,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3718,7 +3718,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"EXDER's Blog","url":"https://exder145.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"EXDER","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://exder145.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到EXDER的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://exder145.github.io/","name":"EXDER's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://exder145.github.io/categories/编程技术/","name":"编程技术"}},{"@type":"ListItem","position":3,"item":{"@id":"https://exder145.github.io/2024/12/25/sql server常见问题/","name":"sql server无法连接的问题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"EXDER's Blog","url":"https://exder145.github.io/","keywords":"EXDER,博客,技术,编程,学习,分享","description":"欢迎来到EXDER的博客","author":{"@type":"Person","name":"EXDER","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://exder145.github.io/","description":"欢迎来到EXDER的博客"},"publisher":{"@type":"Organization","name":"EXDER's Blog","url":"https://exder145.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://exder145.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"sql server无法连接的问题","description":"记录一下 sql server 连接不上的问题","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://exder145.github.io/2024/12/25/sql%20server%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"},"author":{"@type":"Person","name":"EXDER","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://exder145.github.io/"},"publisher":{"@type":"Organization","name":"EXDER's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://exder145.github.io/2024/12/25/sql%20server%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/","wordCount":23,"datePublished":"2024-12-24T16:00:00.000Z","dateModified":"2024-12-30T12:38:56.214Z","articleSection":"编程技术","keywords":"数据库","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"EXDER's Blog","url":"https://exder145.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"EXDER","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://exder145.github.io/","sameAs":["https://github.com/volantis-x"],"description":"欢迎来到EXDER的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://exder145.github.io/","name":"EXDER's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://exder145.github.io/categories/编程技术/","name":"编程技术"}},{"@type":"ListItem","position":3,"item":{"@id":"https://exder145.github.io/2024/12/25/sql server常见问题/","name":"sql server无法连接的问题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"EXDER's Blog","url":"https://exder145.github.io/","keywords":"EXDER,博客,技术,编程,学习,分享","description":"欢迎来到EXDER的博客","author":{"@type":"Person","name":"EXDER","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://exder145.github.io/","description":"欢迎来到EXDER的博客"},"publisher":{"@type":"Organization","name":"EXDER's Blog","url":"https://exder145.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://exder145.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"sql server无法连接的问题","description":"记录一下 sql server 连接不上的问题","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://exder145.github.io/2024/12/25/sql%20server%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"},"author":{"@type":"Person","name":"EXDER","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://exder145.github.io/"},"publisher":{"@type":"Organization","name":"EXDER's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://exder145.github.io/2024/12/25/sql%20server%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/","wordCount":23,"datePublished":"2024-12-24T16:00:00.000Z","dateModified":"2025-01-22T09:22:30.012Z","articleSection":"编程技术","keywords":"数据库","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
